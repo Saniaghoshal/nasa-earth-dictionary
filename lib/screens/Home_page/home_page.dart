@@ -42,7 +42,10 @@ class HomePageState extends State<HomePage> {
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .primary
+                        .withValues(alpha: 0.3),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),
@@ -157,7 +160,7 @@ class HomePageState extends State<HomePage> {
                 ),
                 filled: true,
                 fillColor: Colors.transparent,
-                hintText: 'Search NASA abbreviations...',
+                hintText: '🔍 Search NASA abbreviations & terms...',
                 hintStyle: TextStyle(
                   color: Theme.of(context)
                       .colorScheme
@@ -203,20 +206,32 @@ class HomePageState extends State<HomePage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Theme.of(context).colorScheme.primaryContainer.withValues(alpha: 0.4),
-                    Theme.of(context).colorScheme.primaryContainer.withValues(alpha: 0.2),
+                    Theme.of(context)
+                        .colorScheme
+                        .primaryContainer
+                        .withValues(alpha: 0.4),
+                    Theme.of(context)
+                        .colorScheme
+                        .primaryContainer
+                        .withValues(alpha: 0.2),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(
-                  color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
+                  color: Theme.of(context)
+                      .colorScheme
+                      .primary
+                      .withValues(alpha: 0.2),
                   width: 1,
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .primary
+                        .withValues(alpha: 0.1),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),
@@ -228,7 +243,10 @@ class HomePageState extends State<HomePage> {
                   Container(
                     padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
+                      color: Theme.of(context)
+                          .colorScheme
+                          .primary
+                          .withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Icon(
@@ -293,7 +311,10 @@ class HomePageState extends State<HomePage> {
                                   gradient: LinearGradient(
                                     colors: [
                                       Theme.of(context).colorScheme.surface,
-                                      Theme.of(context).colorScheme.surface.withValues(alpha: 0.5),
+                                      Theme.of(context)
+                                          .colorScheme
+                                          .surface
+                                          .withValues(alpha: 0.5),
                                     ],
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
@@ -428,8 +449,14 @@ class _EmptyState extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Theme.of(context).colorScheme.primaryContainer.withValues(alpha: 0.4),
-                    Theme.of(context).colorScheme.primaryContainer.withValues(alpha: 0.2),
+                    Theme.of(context)
+                        .colorScheme
+                        .primaryContainer
+                        .withValues(alpha: 0.4),
+                    Theme.of(context)
+                        .colorScheme
+                        .primaryContainer
+                        .withValues(alpha: 0.2),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -437,7 +464,10 @@ class _EmptyState extends StatelessWidget {
                 borderRadius: BorderRadius.circular(32),
                 boxShadow: [
                   BoxShadow(
-                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .primary
+                        .withValues(alpha: 0.2),
                     blurRadius: 20,
                     offset: const Offset(0, 8),
                   ),
@@ -472,20 +502,32 @@ class _EmptyState extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Theme.of(context).colorScheme.primaryContainer.withValues(alpha: 0.6),
-                    Theme.of(context).colorScheme.primaryContainer.withValues(alpha: 0.4),
+                    Theme.of(context)
+                        .colorScheme
+                        .primaryContainer
+                        .withValues(alpha: 0.6),
+                    Theme.of(context)
+                        .colorScheme
+                        .primaryContainer
+                        .withValues(alpha: 0.4),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
-                  color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3),
+                  color: Theme.of(context)
+                      .colorScheme
+                      .primary
+                      .withValues(alpha: 0.3),
                   width: 1,
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .primary
+                        .withValues(alpha: 0.1),
                     blurRadius: 12,
                     offset: const Offset(0, 4),
                   ),
@@ -497,7 +539,10 @@ class _EmptyState extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
+                      color: Theme.of(context)
+                          .colorScheme
+                          .primary
+                          .withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(
@@ -508,9 +553,10 @@ class _EmptyState extends StatelessWidget {
                   ),
                   const SizedBox(width: 12),
                   Text(
-                    'Try: "ISS", "NASA", or "Mars"',
+                    '💡 Try: "ISS", "NASA", or "Mars"',
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: Theme.of(context).colorScheme.onPrimaryContainer,
+                          color:
+                              Theme.of(context).colorScheme.onPrimaryContainer,
                           fontWeight: FontWeight.w700,
                           fontSize: 15,
                         ),
